@@ -4,6 +4,7 @@ import NavBar from "./components/navBar/NavBar";
 
 import {Routes,Route} from 'react-router-dom' ;
 import NousConnaitre from "./components/NousConnaitre/NousConnaitre"
+import NosFonds from "./components/NosFonds/NosFonds";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       </div>
       <Routes>
       <Route path="/" element={<NousConnaitre/>} />
+
+      <Route path="/nosfonds" element={<NosFonds/>} />
 
       </Routes>
 
