@@ -1,0 +1,266 @@
+.nousconnaitre {
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* presentation Plus Chiffre cles  */
+
+.presentationPlusChiffre {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../../images/banner.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.chiffreCles {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  color: #fff;
+}
+.chiffreCles h1,
+.presentation h1 {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.presentation p {
+  color: #f8f8f8;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 0 50px 24px;
+}
+.rowNousConnaitre {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+.chiffreCles-col {
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 1%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  color: blue;
+}
+
+.chiffreCles-col:hover {
+  background-color: blue;
+  color: #fff;
+  transition: 0.5s;
+}
+.chiffreCles-col h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.chiffreCles-col:hover {
+  box-shadow: 0 0 20px 0px rgba(255, 254, 254, 0.2);
+}
+
+@media (max-width: 700px) {
+  .rowNousConnaitre {
+    flex-direction: column;
+  }
+  .chiffreCles-col {
+    flex-basis: 15%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+  }
+
+  .nousconnaitre {
+    width: 95%;
+  }
+  .chiffreCles .presentation {
+    width: 95%;
+  }
+}
+
+/* PrincipeInvestissement */
+
+.principeInvestissement {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.principeInvestissement h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.pi-row {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.pi-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.layer {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.layer:hover {
+  background: rgba(18, 127, 190, 0.7);
+}
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  opacity: 1;
+  transition: 0.5s;
+}
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+.layer::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.layer:hover::after {
+  width: 100%;
+}
+.pi-col img {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .pi-row {
+    flex-direction: column;
+  }
+}
+
+/* Modes d’intervention */
+
+.mode-intervention {
+  padding: 100px 0;
+  background: #7f8cfc;
+}
+.mode-intervention h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+}
+.action-mode-intervention {
+  display: flex;
+  justify-content: space-between;
+}
+.col-mode-intervention {
+  background-color: #fff;
+  width: 80%;
+  margin: 10px;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+.col-mode-intervention h4 {
+  text-align: center;
+}
+
+.col-mode-intervention:hover {
+  box-shadow: 0 0 20px 0px rgba(255, 254, 254, 0.2);
+  border: solid 1px rgb(255, 255, 255);
+  background: #384aeb;
+  color: #fff3f3;
+  transition: 0.5s;
+}
+
+@media (max-width: 700px) {
+  .action-mode-intervention {
+    flex-direction: column;
+  }
+}
+
+/* 
+etat d'esprit */
+.etat-esprit {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../../images/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.etat-esprit h2,
+.etat-esprit h3 {
+  text-align: center;
+  color: #fff3f3;
+  margin: 20px;
+}
+.etat-esprit h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.etat-esprit h3 {
+  color: #fff;
+}
+
+.title h4 {
+  color: #f44336;
+  margin-left: 46px;
+}
+
+.title img {
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+.etat-esprit p {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 0 50px 24px;
+}
+
+.col-etat-esprit:hover {
+  background-color: #384aeb;
+  border-radius: 20px;
+}
+
+.col-etat-esprit {
+  transition: 0.5s;
+}
+
+.col-etat-esprit:hover h4 {
+  color: white;
+}
